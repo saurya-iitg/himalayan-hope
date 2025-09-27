@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - Himalayan Hope</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .involvement-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+     <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center">
+                    <i data-feather="heart" class="text-pink-600 w-8 h-8 mr-2"></i>
+                    <span class="font-bold text-xl text-gray-800">Himalayan Hope</span>
+                </a>
+<div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-pink-600 font-medium">Home</a>
+                    <a href="programs.html" class="text-gray-800 hover:text-pink-600">Programs</a>
+                    <a href="get-involved.html" class="text-gray-800 hover:text-pink-600">Get Involved</a>
+                    <a href="blog.html" class="text-gray-800 hover:text-pink-600">Blog</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-pink-600">Contact</a>
+                    <button class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition duration-300">
+                        Donate Now
+                    </button>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <i data-feather="menu" class="text-gray-800 w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-pink-600 font-medium">Home</a>
+                    <a href="programs.html" class="text-gray-800 hover:text-pink-600">Programs</a>
+                    <a href="get-involved.html" class="text-gray-800 hover:text-pink-600">Get Involved</a>
+                    <a href="blog.html" class="text-gray-800 hover:text-pink-600">Blog</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-pink-600">Contact</a>
+                    <button class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition duration-300 w-full">
+                        Donate Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+       <!-- Page Header -->
+    <div class="bg-gradient-to-r from-pink-600 to-purple-600 py-20 text-center text-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Get Involved</h1>
+            <p class="text-xl max-w-2xl mx-auto">Join our mission to transform lives in Nepal's Himalayan communities. Every action counts.</p>
+        </div>
+    </div>
+
+    <!-- Ways to Get Involved -->
+    <div class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Ways to Make a Difference</h2>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">Whether through donations, volunteering, or spreading awareness, your support creates lasting change.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-pink-50 rounded-xl p-8 text-center involvement-card">
+                    <i data-feather="dollar-sign" class="w-12 h-12 text-pink-600 mx-auto mb-6"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Donate</h3>
+                    <p class="text-gray-600 mb-6">Your financial support directly funds education, healthcare, and community development programs.</p>
+                    <button class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition duration-300">
+                        Donate Now
+                    </button>
+                </div>
+                <div class="bg-pink-50 rounded-xl p-8 text-center involvement-card">
+                    <i data-feather="users" class="w-12 h-12 text-pink-600 mx-auto mb-6"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Volunteer</h3>
+                    <p class="text-gray-600 mb-6">Share your skills and time to make a hands-on impact in our programs and communities.</p>
+                    <button class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition duration-300">
+                        Volunteer
+                    </button>
+                </div>
+                <div class="bg-pink-50 rounded-xl p-8 text-center involvement-card">
+                    <i data-feather="share-2" class="w-12 h-12 text-pink-600 mx-auto mb-6"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Spread Awareness</h3>
+                    <p class="text-gray-600 mb-6">Help us reach more supporters by sharing our mission with your network and community.</p>
+                    <button class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition duration-300">
+                        Share Our Story
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Donation Options -->
+    <div class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Donation Options</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl p-6 text-center">
+                    <h3 class="text-xl font-bold text-pink-600 mb-4">$25</h3>
+                    <p class="text-gray-600 mb-4">Provides school supplies for one child for a year</p>
+                    <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700 transition duration-300 w-full">
+                        Donate $25
+                    </button>
+                </div>
+                <div class="bg-white rounded-xl p-6 text-center">
+                    <h3 class="text-xl font-bold text-pink-600 mb-4">$50</h3>
+                    <p class="text-gray-600 mb-4">Sponsors nutritious meals for a month</p>
+                    <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700 transition duration-300 w-full">
+                        Donate $50
+                    </button>
+                </div>
+                <div class="bg-white rounded-xl p-6 text-center">
+                    <h3 class="text-xl font-bold text-pink-600 mb-4">$100</h3>
+                    <p class="text-gray-600 mb-4">Supports teacher training programs</p>
+                    <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700 transition duration-300 w-full">
+                        Donate $100
+                    </button>
+                </div>
+                <div class="bg-white rounded-xl p-6 text-center">
+                    <h3 class="text-xl font-bold text-pink-600 mb-4">Custom</h3>
+                    <p class="text-gray-600 mb-4">Any amount makes a difference</p>
+                    <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700 transition duration-300 w-full">
+                        Custom Amount
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Volunteer Opportunities -->
+    <div class="py-16 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Volunteer Opportunities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">On-site Volunteering</h3>
+                    <p class="text-gray-600 mb-6">Join us in Nepal and work directly with our communities:</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-pink-600 w-4 h-4 mt-1 mr-2"></i>
+                            <span>Teaching and tutoring in our schools</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-pink-600 w-4 h-4 mt-1 mr-2"></i>
+                            <span>Healthcare and medical camps</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-pink-600 w-4 h-4 mt-1 mr-2"></i>
+                            <span>Construction and infrastructure projects</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-pink-600 w-4 h-4 mt-1 mr-2"></i>
+                            <span>Community development workshops</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Remote Volunteering</h3>
+                    <p class="text-gray-600 mb-6">Support us from anywhere in the world:</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-pink-600 w-4 h-4 mt-1 mr-2"></i>
+                            <span>Digital marketing and social media</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-pink-600 w-4 h-4 mt-1 mr-2"></i>
+                            <span>Grant writing and fundraising</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-pink-600 w-4 h-4 mt-1 mr-2"></i>
+                            <span>Website development and IT support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-pink-600 w-4 h-4 mt-1 mr-2"></i>
+                            <span>Translation and content creation</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="heart" class="text-pink-600 w-8 h-8 mr-2"></i>
+                        <span class="font-bold text-xl">Himalayan Hope</span>
+                    </div>
+                    <p class="text-gray-400">Transforming lives through education and community development in Nepal since 2010.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="programs.html" class="text-gray-400 hover:text-white">Our Programs</a></li>
+                        <li><a href="get-involved.html" class="text-gray-400 hover:text-white">Get Involved</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
+                            <span class="text-gray-400">Kathmandu, Nepal</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="w-4 h-4 mr-2"></i>
+                            <span class="text-gray-400">info@himalayanhope.org</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="w-4 h-4 mr-2"></i>
+                            <span class="text-gray-400">+977 1 1234567</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter to receive updates on our work.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l focus:outline-none focus:ring-2 focus:ring-pink-600 w-full">
+                        <button type="submit" class="bg-pink-600 text-white px-4 py-2 rounded-r hover:bg-pink-700 transition duration-300">
+                            <i data-feather="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+                <p>© 2023 Himalayan Hope. All rights reserved. | <a href="privacy-policy.html" class="hover:text-white">Privacy Policy</a> | <a href="terms-of-use.html" class="hover:text-white">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+<script>
+        feather.replace();
+        
+        // Animate involvement cards on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            anime({
+                targets: '.involvement-card',
+                translateY: [50, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(100),
+                easing: 'easeOutExpo'
+            });
+            
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenuButton.querySelector('i');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.setAttribute('data-feather', 'menu');
+                } else {
+                    icon.setAttribute('data-feather', 'x');
+                }
+                feather.replace();
+            });
+        });
+    </script>
+    <script>
+        (function(){
+            function attachToggle(){
+                const btn = document.getElementById('mobile-menu-button');
+                const menu = document.getElementById('mobile-menu');
+                if (!btn || !menu) return;
+                if (btn.__menuToggleAttached) return;
+                btn.addEventListener('click', function(){
+                    menu.classList.toggle('hidden');
+                    const icon = btn.querySelector('i');
+                    if (icon) icon.setAttribute('data-feather', menu.classList.contains('hidden') ? 'menu' : 'x');
+                    if (window.feather) try{ window.feather.replace(); }catch(e){}
+                });
+                btn.__menuToggleAttached = true;
+            }
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', attachToggle);
+            else attachToggle();
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalayan Hope - Empowering Nepal's Children</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-height {
+            min-height: calc(100vh - 80px);
+        }
+        .donation-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(219, 39, 119, 0.3);
+        }
+        .impact-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center">
+                    <i data-feather="heart" class="text-pink-600 w-8 h-8 mr-2"></i>
+                    <span class="font-bold text-xl text-gray-800">Himalayan Hope</span>
+                </a>
+<div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-pink-600 font-medium">Home</a>
+                    <a href="programs.html" class="text-gray-800 hover:text-pink-600">Programs</a>
+                    <a href="get-involved.html" class="text-gray-800 hover:text-pink-600">Get Involved</a>
+                    <a href="blog.html" class="text-gray-800 hover:text-pink-600">Blog</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-pink-600">Contact</a>
+                    <button class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition duration-300">
+                        Donate Now
+                    </button>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                    <i data-feather="menu" class="text-gray-800 w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-pink-600 font-medium">Home</a>
+                    <a href="programs.html" class="text-gray-800 hover:text-pink-600">Programs</a>
+                    <a href="get-involved.html" class="text-gray-800 hover:text-pink-600">Get Involved</a>
+                    <a href="blog.html" class="text-gray-800 hover:text-pink-600">Blog</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-pink-600">Contact</a>
+                    <button class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition duration-300 w-full">
+                        Donate Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- Hero Section -->
+    <div id="hero" class="relative hero-height flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="http://static.photos/nature/1200x630/42" alt="Nepal Landscape" class="w-full h-full object-cover opacity-30">
+        </div>
+        <div class="container mx-auto px-6 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">Bringing Hope to Nepal's Children</h1>
+            <p class="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto">We're transforming lives through education and community development in the Himalayan region.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-pink-600 text-white px-8 py-4 rounded-full text-lg font-medium donation-btn transition duration-300 shadow-lg">
+                    Sponsor a Child
+                </button>
+                <button class="border-2 border-pink-600 text-pink-600 px-8 py-4 rounded-full text-lg font-medium hover:bg-pink-50 transition duration-300">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Impact Stats -->
+    <div class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Impact in Numbers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-pink-50 rounded-xl p-8 text-center impact-card">
+                    <i data-feather="book-open" class="w-12 h-12 text-pink-600 mx-auto mb-4"></i>
+                    <h3 class="text-4xl font-bold text-pink-600 mb-2">1,200+</h3>
+                    <p class="text-gray-700">Children Educated</p>
+                </div>
+                <div class="bg-pink-50 rounded-xl p-8 text-center impact-card">
+                    <i data-feather="home" class="w-12 h-12 text-pink-600 mx-auto mb-4"></i>
+                    <h3 class="text-4xl font-bold text-pink-600 mb-2">18</h3>
+                    <p class="text-gray-700">Schools Built</p>
+                </div>
+                <div class="bg-pink-50 rounded-xl p-8 text-center impact-card">
+                    <i data-feather="users" class="w-12 h-12 text-pink-600 mx-auto mb-4"></i>
+                    <h3 class="text-4xl font-bold text-pink-600 mb-2">5,000+</h3>
+                    <p class="text-gray-700">Families Supported</p>
+                </div>
+                <div class="bg-pink-50 rounded-xl p-8 text-center impact-card">
+                    <i data-feather="map-pin" class="w-12 h-12 text-pink-600 mx-auto mb-4"></i>
+                    <h3 class="text-4xl font-bold text-pink-600 mb-2">12</h3>
+                    <p class="text-gray-700">Villages Reached</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Programs Section -->
+    <div class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Our Programs</h2>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">We implement sustainable programs that address the root causes of poverty and lack of education in Nepal.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="http://static.photos/education/640x360/1" alt="Education Program" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Quality Education</h3>
+                        <p class="text-gray-600 mb-4">Building schools, training teachers, and providing scholarships to ensure every child has access to learning.</p>
+                        <a href="#" class="text-pink-600 font-medium flex items-center">
+                            Learn More <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="http://static.photos/food/640x360/2" alt="Nutrition Program" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Nutrition & Health</h3>
+                        <p class="text-gray-600 mb-4">Providing daily meals and healthcare services to combat malnutrition and preventable diseases.</p>
+                        <a href="#" class="text-pink-600 font-medium flex items-center">
+                            Learn More <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="http://static.photos/workspace/640x360/3" alt="Livelihood Program" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Livelihood Support</h3>
+                        <p class="text-gray-600 mb-4">Vocational training and microloans to help families become self-sufficient and break the cycle of poverty.</p>
+                        <a href="#" class="text-pink-600 font-medium flex items-center">
+                            Learn More <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Story Section -->
+    <div class="relative py-16 bg-pink-600 text-white">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600" style="mix-blend-mode: multiply;"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <h2 class="text-3xl font-bold mb-6">Meet Sunita's Story</h2>
+                    <p class="text-lg mb-6">At 8 years old, Sunita had never been to school. Her family couldn't afford the fees, and she spent her days collecting firewood.</p>
+                    <p class="text-lg mb-8">Today, thanks to our scholarship program, Sunita is top of her class and dreams of becoming a doctor to help her community.</p>
+                    <button class="bg-white text-pink-600 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition duration-300">
+                        Read More Stories
+                    </button>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="relative rounded-xl overflow-hidden shadow-2xl">
+                        <img src="http://static.photos/people/640x360/4" alt="Sunita's Story" class="w-full h-auto">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
+                            <p class="text-white text-lg">"Education has given me wings to fly." - Sunita, Age 12</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Join Us in Making a Difference</h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto">Your support can change a child's life forever. Whether through donations, volunteering, or spreading awareness, every action counts.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-pink-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-pink-700 transition duration-300">
+                    Donate Now
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-700 transition duration-300">
+                    Volunteer
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-700 transition duration-300">
+                    Partner With Us
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="heart" class="text-pink-600 w-8 h-8 mr-2"></i>
+                        <span class="font-bold text-xl">Himalayan Hope</span>
+                    </div>
+                    <p class="text-gray-400">Transforming lives through education and community development in Nepal since 2010.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="programs.html" class="text-gray-400 hover:text-white">Our Programs</a></li>
+                        <li><a href="get-involved.html" class="text-gray-400 hover:text-white">Get Involved</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
+                            <span class="text-gray-400">Kathmandu, Nepal</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="w-4 h-4 mr-2"></i>
+                            <span class="text-gray-400">info@himalayanhope.org</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="w-4 h-4 mr-2"></i>
+                            <span class="text-gray-400">+977 1 1234567</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter to receive updates on our work.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l focus:outline-none focus:ring-2 focus:ring-pink-600 w-full">
+                        <button type="submit" class="bg-pink-600 text-white px-4 py-2 rounded-r hover:bg-pink-700 transition duration-300">
+                            <i data-feather="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+                <p>© 2023 Himalayan Hope. All rights reserved. | <a href="privacy-policy.html" class="hover:text-white">Privacy Policy</a> | <a href="terms-of-use.html" class="hover:text-white">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+<script>
+        // Initialize animations
+        feather.replace();
+        
+        // Vanta.js background for hero section
+        VANTA.GLOBE({
+            el: "#hero",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xff6b81,
+            backgroundColor: 0xf8fafc,
+            size: 1.00
+        });
+        // Animate impact cards on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            anime({
+                targets: '.impact-card',
+                translateY: [50, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(100),
+                easing: 'easeOutExpo'
+            });
+            
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenuButton.querySelector('i');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.setAttribute('data-feather', 'menu');
+                } else {
+                    icon.setAttribute('data-feather', 'x');
+                }
+                feather.replace();
+            });
+        });
+    </script>
+</body>
+</html>
